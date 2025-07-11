@@ -28,7 +28,7 @@ This project analyzes **three CSV files**:
 
 ---
 
-## ⚙Setup & Requirements
+## Setup & Requirements
 
 ### Python Version
 - Python 3.8 or higher recommended
@@ -47,7 +47,7 @@ pip install pandas polars matplotlib seaborn
 
 ### 1. Pure Python Script
 ```bash
-python script1_full_pure_python.py
+python pure_stats_python.py
 ```
 - No libraries required
 - Computes count, mean, min, max, std deviation
@@ -57,7 +57,7 @@ python script1_full_pure_python.py
 
 ###  2. Pandas Script
 ```bash
-python script2_pandas_analysis.py
+python pandas_stats.py
 ```
 - Uses `DataFrame.describe()`, `value_counts()`, `nunique()`
 - Easy, fast, and readable
@@ -66,7 +66,7 @@ python script2_pandas_analysis.py
 
 ###  3. Polars Script
 ```bash
-python script3_polars_analysis.py
+python polars_stats.py
 ```
 - Blazing fast performance
 - Memory-efficient, ideal for large files
@@ -75,7 +75,7 @@ python script3_polars_analysis.py
 
 ###  4. Visualization Script (Optional Bonus)
 ```bash
-python visualize_data.py
+python visualize.py
 ```
 - Generates histograms, boxplots, and bar charts
 - Outputs stored in:
@@ -114,11 +114,11 @@ python visualize_data.py
 
 ```
 .
-├── script1_full_pure_python.py     # Pure Python stats
-├── script2_pandas_analysis.py      # Pandas version
-├── script3_polars_analysis.py      # Polars version
-├── visualize_data.py               # Bonus visualization script
-├── README.md                       # You're here!
+├── pure_stats_python.py    # Pure Python stats
+├── pandas_stats.py      # Pandas version
+├── polars_stats.py    # Polars version
+├── visualize.py      # Bonus visualization script
+├── README.md        # Documentation              
 ```
 
 
