@@ -1,6 +1,3 @@
-# Task_04_Descriptive_Stats
-
-
 # 2024 US Presidential Election: Social Media Descriptive Analysis
 
 This project presents a complete descriptive statistics engine built using three approaches — **Pure Python**, **Pandas**, and **Polars** — to analyze social media datasets related to the 2024 U.S. Presidential election.
