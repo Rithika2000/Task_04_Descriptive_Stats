@@ -85,17 +85,28 @@ python visualize.py
 ## Key Insights from the Analysis
 
 ### Facebook Ads
-- A small number of `page_id`s account for a **disproportionate share of impressions and spend**.
-- Most ads have modest budgets; a few ads have extremely high visibility.
-- Frequent themes: **health**, **immigration**, **election integrity**.
+
+- **Ad Spend Distribution**: Majority of ads had low or no spend, while a few had very high budgets (over $46,000), indicating significant investment by key pages.
+- **Impression Disparity**: Some ads reached over 20 million users, showing wide exposure inequality.
+- **Campaign Themes**: Most common ad narratives included **health**, **governance**, **immigration**, and **election integrity**.
+- **Targeted Delivery**: Presence of `delivery_by_region` and `demographic_distribution` confirms geo-demographic targeting.
+- **Few Dominant Pages**: Group-by analysis showed that a limited number of pages controlled most ad distribution.
+- **Ad Reuse**: Repeated `ad_id`s across different `page_id`s point to strategic reuse or A/B testing.
 
 ### Facebook Posts
-- Post engagement is **highly skewed** — a few posts go viral, most get minimal attention.
-- Some non-sponsored posts still include sponsor metadata, suggesting campaign coordination.
+- **Engagement Concentration**: Likes, shares, and comments are heavily skewed, with a few posts generating the bulk of interaction.
+- **Emotional Reactions**: Variation in reactions (e.g., `Love`, `Haha`, `Angry`) reveals the emotional tone of content.
+- **Sponsorship and Performance**: Sponsored posts generally outperform non-sponsored ones, as seen in `Overperforming Score`.
+- **Video Content**: Posts with longer videos correlate with higher view counts.
+- **Topic Focus**: Frequent themes include **governance**, **education**, and **immigration**.
+- **Admin Location Insight**: Most pages are U.S.-based, but some show foreign administration, which could raise concerns over influence.
 
 ### Twitter Posts
-- Retweets and replies dominate — suggesting reactive or viral strategy.
-- Topic indicators suggest strong focus on **governance**, **race**, and **foreign policy**.
+- **Amplification Over Creation**: Many tweets are retweets or replies, showing Twitter’s role in **spreading** rather than **originating** content.
+- **Extreme Engagement Skew**: Few tweets generate the most likes, replies, and retweets.
+- **Key Topics**: Consistent focus on **race**, **governance**, and **foreign policy** throughout the dataset.
+- **Reply Control Mechanism**: Use of `isConversationControlled` reflects attempts to manage public response.
+- **Temporal Patterns**: Fields like `createdAt` and `month_year` could help identify engagement spikes during key political moments.
 
 ---
 
